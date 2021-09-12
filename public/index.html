@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Serduszka Fotos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="header">
+        <img id="headerPic" src="logo.jpeg" alt="" />
+        <div id="headerName">{{heading}}</div>
+      </div>
+
+      <first-component
+        v-if="selectedImage"
+        post-title="on my way to pop up the image"
+        :id="selectedImage"
+        @close="closeMe"
+      ></first-component>
+
+      <form>
+        <input v-model="title" type="tex" name="title" placeholder="Titel" />
+
+        <input
+          v-model="description"
+          type="tex"
+          name="description"
+          placeholder="Wo/wann?"
+        />
+
+        <input
+          v-model="username"
+          type="text"
+          name="username"
+          placeholder="Welche Serduszko?"
+        />
+
+        <input
+          class="white"
+          @change="handleChange"
+          type="file"
+          name="file"
+          accept="image/*"
+        />
+
+        <button @click="handleClick">Bild hochladen</button>
+      </form>
+
+      <div :class="mainContainer">
+        <div class="da-oben" v-if="images" v-for="image in images">
+          <a :href="'#' + image.id">
+            <div :class="imageContainer">
+              <img class="image" :src="image.url" />
+              <p class="title-description">
+                {{image.title}}, {{image.description}}
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button v-if="!hideButton" @click="more">More results</button>
+    </div>
+
+    <script id="image-template" type="text/x-template">
+
+      <div class="component">
+              <div class="close">
+                  <a :href="'#' + nextID">
+                      <img id="headerPic2" src="left-arrow.png" alt="previous pic">
+                  </a>
+                  <a :href="'#' + previousID">
+                      <img id="headerPic2" src="right-arrow.png" alt="next pic">
+                  </a>
+                  <img id="headerPic2" @click='closeModal' src="close.png" alt="close">
+              </div>
+
+              <div class="sideBySide">
+
+                  <div class="toBeCommented">
+                      <img class="imageModal" :src="selectedImage.url" alt="Selected image">
+                      <p class="margin-left">title: {{selectedImage.title}}, wo/wann?: {{selectedImage.description}}</p>
+                      <p class="margin-left">uploaded by: {{selectedImage.username}}, at: {{selectedImage.created_at}}</p>
+                  </div>
+
+                  <div class="commentsPlusSmiles">
+                      <div class="modal" v-if='comments' v-for="c in comments">
+                          <!-- <button @click="count++">smile</button>{{count}} smiles -->
+                          <p >{{c.comment}}</p> / by /
+                          <p >{{c.username}}</p>
+                      </div>
+                      <input class="margin-left" type="text" name="comment" v-model='comment' placeholder="comment">
+                      <input class="margin-left" type="text" name="username-comment" v-model='username' placeholder="username">
+                      <button class="margin-left" @click='handleClickComment'> submit </button>
+                  </div>
+
+              </div>
+
+      </div>
+    </script>
+
+    <script src="/js/vue.js"></script>
+    <script src="/js/axios.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
+
+<!-- v-bind: = : -->
+<!-- v-on:click = a @click -->

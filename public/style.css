@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+
+#headerPic {
+  height: 3rem;
+}
+
+#headerName {
+  font-size: 2rem;
+  color: #8b0000;
+}
+
+form {
+  background-color: #ffa07a;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  height: 2rem;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+  border: 0;
+}
+
+.white {
+  padding: 6px;
+  background-color: white;
+}
+
+button {
+  height: 2rem;
+  width: 10rem;
+  background-color: #8b0000;
+  color: white;
+  border: 0;
+  outline: 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.da-oben {
+  height: 8rem;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  width: 7rem;
+  height: 7rem;
+}
+
+.title-description {
+  font-size: 10px;
+  color: black;
+}
+
+.image {
+  height: 6rem;
+  width: 6rem;
+}
+
+#image-template {
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 104vh;
+  width: 100vw;
+  position: fixed;
+}
+
+.close {
+  display: flex;
+  justify-content: space-around;
+  height: 14vh;
+  width: 100vw;
+}
+
+#headerPic2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.sideBySide {
+  display: flex;
+  flex-direction: column;
+  height: 83vh;
+  width: 100vw;
+}
+
+.toBeCommented {
+  height: 60vh;
+  width: 100vw;
+}
+
+.margin-left {
+  margin-left: 1rem;
+}
+
+.imageModal {
+  height: 50vh;
+  width: 102vw;
+}
+
+.commentsPlusSmiles {
+  background-color: #ffa07a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 23vh;
+  width: 100vw;
+}
+
+.modal {
+  margin-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
