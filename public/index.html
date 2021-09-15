@@ -49,7 +49,7 @@
       </form>
 
       <div :class="mainContainer">
-        <div class="da-oben" v-if="images" v-for="image in images">
+        <div v-if="images" v-for="image in images">
           <a :href="'#' + image.id">
             <div :class="imageContainer">
               <img class="image" :src="image.url" />

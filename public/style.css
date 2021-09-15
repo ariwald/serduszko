@@ -61,18 +61,11 @@ button {
 
 .mainContainer {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.da-oben {
-  height: 12rem;
-  width: 12rem;
-  display: flex;
-  justify-content: center;
 }
 
 .imageContainer {
@@ -82,8 +75,6 @@ button {
   align-items: center;
   overflow: hidden;
   margin-bottom: 1rem;
-  width: 12rem;
-  height: 12rem;
 }
 
 .title-description {
@@ -93,9 +84,9 @@ button {
 }
 
 .image {
-  height: 12rem;
-  width: 12rem;
   margin-bottom: 1rem;
+  width: 98%;
+  height: 98%;
 }
 
 #image-template {
@@ -107,9 +98,8 @@ button {
   justify-content: center;
   align-items: center;
   background-color: white;
-  height: 104vh;
+  height: 95vh;
   width: 100vw;
-  position: fixed;
 }
 
 .close {
@@ -129,7 +119,7 @@ button {
 .sideBySide {
   display: flex;
   flex-direction: column;
-  height: 83vh;
+  height: 86vh;
   width: 100vw;
 }
 
@@ -144,7 +134,7 @@ button {
 
 .imageModal {
   height: 50vh;
-  width: 102vw;
+  width: 100vw;
 }
 
 .commentsPlusSmiles {
