@@ -49,7 +49,7 @@
       </form>
 
       <div :class="mainContainer">
-        <div class="da-oben" v-if="images" v-for="image in images">
+        <div v-if="images" v-for="image in images">
           <a :href="'#' + image.id">
             <div :class="imageContainer">
               <img class="image" :src="image.url" />
@@ -78,7 +78,7 @@
 
               <div class="sideBySide">
 
-                  <div class="toBeCommented">
+                  <div class="">
                       <img class="imageModal" :src="selectedImage.url" alt="Selected image">
                       <p class="margin-left">title: {{selectedImage.title}}, wo/wann?: {{selectedImage.description}}</p>
                       <p class="margin-left">uploaded by: {{selectedImage.username}}, at: {{selectedImage.created_at}}</p>
