@@ -7,5 +7,3 @@ UPLOAD. New images get grabbed using Multer, then uploaded to AWS S3, with a ref
 INTERACTION. One can visit a post's page, to interact with the author, ask questions, critique, praise, or simply share your thoughts in the comment section.
 
 FRONTEND. In the front, Vue.js works its magic. Navigation to different pages is provided with Hash-Routing, so that posts can be sent to other places on the internet.
-
-# serduszko
