@@ -1,4 +1,4 @@
-First time using Vue.js! Everyone can upload a picture (or comment a picture) from a beloved friend and add some information about the person, you can check it out at: https://serduszko.herokuapp.com/
+First time using Vue.js! Everyone can upload a picture (or comment a picture) from a beloved friend and add some information about the person.
 
 BACKEND. In the backend, a Node.js Express server and a PostgreSQL database make sure everything is kept alive. The image board displayes the 9 most recent pictures, by hitting the more pictures button, more picutres will be loaded and displayed.
 
