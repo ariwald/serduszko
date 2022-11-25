@@ -1,4 +1,4 @@
-First time using Vue.js! This project came to life when I realized that one of the few activities that corona left me out was hanging out in the black forest (southwest Germany). So I decided to get input from locals/experts. Everyone can upload a picture (or comment a picture) from a black forest herb and add some information regarding how we can use it. But it can be used for everything, for example, a polish friend of mine wanted to keep the pics of the beloved ones in one place, so I adapted the app and you can check it out at: https://serduszko.herokuapp.com/
+First time using Vue.js! Everyone can upload a picture (or comment a picture) from a beloved friend and add some information about the person, you can check it out at: https://serduszko.herokuapp.com/
 
 BACKEND. In the backend, a Node.js Express server and a PostgreSQL database make sure everything is kept alive. The image board displayes the 9 most recent pictures, by hitting the more pictures button, more picutres will be loaded and displayed.
 
